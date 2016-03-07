@@ -11,8 +11,16 @@
 
         <TextBlock x:Name="tblStatusUpdates" Text="Location Data Update" HorizontalAlignment="Left"
                    VerticalAlignment="top" Margin="10, 10, 0, 0" />
-        <TextBlock x:Name="tblGeoData" Text="No Data Yet" HorizontalAlignment="Left"
-                   VerticalAlignment="Center" Margin="25, 0, 0, 0" TextWrapping="Wrap"  />
+        <StackPanel x:Name="spCoordinates" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                    Margin="25, 0,0,0">
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                    Margin="10,0,20,10" Orientation="Horizontal" >
+            <Button x:Name="btnStore" Content="Save Location" Click="btnStore_Click" Margin="3" />
+            <Button x:Name="btnCalculate" Content="Calculate Area" Click="btnCalculate_Click" Margin="3" />
+        </StackPanel>
 
     </Grid>
 </Page>
